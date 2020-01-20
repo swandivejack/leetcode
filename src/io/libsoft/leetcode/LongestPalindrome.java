@@ -16,7 +16,8 @@ public class LongestPalindrome {
       int j = 0;
       String st;
       while (i - j >= 0 && j + i <= word.length - 1) {
-        if ((i+j <= word.length - 2 && isPalindrome(st = s.substring(i - j, i + j + 2))) || isPalindrome(st = s.substring(i - j, i + j + 1))) {
+        if ((i+j <= word.length - 2 && isPalindrome(st = s.substring(i - j, i + j + 2)))
+            || isPalindrome(st = s.substring(i - j, i + j + 1))) {
           if (st.length() > longest.length()) {
             longest = st;
           }
